@@ -1,78 +1,77 @@
-const { cmd } = require('../command');
-const { performance } = require('perf_hooks');
-const moment = require('moment-timezone');
+const config = require('../config');
+const { cmd, commands } = require('../command');
 
 cmd({
-  pattern: "ping",
-  alias: ["speed", "latency"],
-  desc: "Check bot response speed",
-  category: "system",
-  react: "🏓",
-  filename: __filename
-}, async (Void, mek, m) => {
-  try {
-    const start = performance.now();
-    
-    // Get server time
-    const time = moment.tz('Africa/Nairobi').format('HH:mm:ss');
-    const date = moment.tz('Africa/Nairobi').format('DD/MM/YYYY');
-    
-    // Calculate ping
-    const end = performance.now();
-    const speed = (end - start).toFixed(2);
-    
-    // Beautiful ping message
-    const message = `
-⚡ *PK-XMD PING RESULTS* ⚡
+    pattern: "ping",
+    alias: ["speed","pong"],use: '.ping',
+    desc: "Check bot's response time.",
+    category: "main",
+    react: "⚡",
+    filename: __filename
+},
+async (conn, mek, m, { from, quoted, sender, reply }) => {
+    try {
+        const start = new Date().getTime();
 
-🏓 Response Speed: ${speed}ms
-🌍 Server Location: Africa/Nairobi
-🕒 Server Time: ${time}
-📅 Date: ${date}
+        const reactionEmojis = ['🔥', '⚡', '🚀', '💨', '🎯', '🎉', '🌟', '💥', '🕐', '🔹'];
+        const textEmojis = ['💎', '🏆', '⚡️', '🚀', '🎶', '🌠', '🌀', '🔱', '🛡️', '✨'];
 
-🔧 Powered by Pkdriller
-`.trim();
+        const reactionEmoji = reactionEmojis[Math.floor(Math.random() * reactionEmojis.length)];
+        let textEmoji = textEmojis[Math.floor(Math.random() * textEmojis.length)];
 
-    // Newsletter context
-    const contextInfo = {
-      externalAdReply: {
-        title: "PK-XMD • PING",
-        body: `Response: ${speed}ms`,
-        thumbnailUrl: 'https://files.catbox.moe/fgiecg.jpg',
-        sourceUrl: 'https://github.com/mejjar00254/PK-XMD',
-        mediaType: 1,
-        renderLargerThumbnail: true
-      },
-      forwardingScore: 999,
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: "120363288304618280@newsletter",
-        newsletterName: "PK-XMD Official",
-        serverMessageId: 456
-      }
-    };
+        // Ensure reaction and text emojis are different
+        while (textEmoji === reactionEmoji) {
+            textEmoji = textEmojis[Math.floor(Math.random() * textEmojis.length)];
+        }
 
-    await Void.sendMessage(
-      m.chat,
-      {
-        text: message,
-        contextInfo: contextInfo
-      },
-      {
-        quoted: mek
-      }
-    );
+        // Send reaction using conn.sendMessage()
+        await conn.sendMessage(from, {
+            react: { text: textEmoji, key: mek.key }
+        });
 
-  } catch (error) {
-    console.error('Ping command error:', error);
-    await Void.sendMessage(
-      m.chat,
-      {
-        text: '⚠️ Error checking ping!'
-      },
-      {
-        quoted: mek
-      }
-    );
-  }
+        const end = new Date().getTime();
+        const responseTime = (end - start) / 1000;
+
+        const text = `> *𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒-𝐗𝐌𝐃: ${responseTime.toFixed(2)}ms ${reactionEmoji}*`;
+
+        await conn.sendMessage(from, {
+            text,
+            contextInfo: {
+                mentionedJid: [sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363302677217436@newsletter',
+                    newsletterName: "ᴄᴀsᴇʏʀʜᴏᴅᴅᴇs-xᴍᴅ 👻",
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+    } catch (e) {
+        console.error("Error in ping command:", e);
+        reply(`An error occurred: ${e.message}`);
+    }
 });
+
+// ping2 
+
+cmd({
+    pattern: "ping2",
+    desc: "Check bot's response time.",
+    category: "main",
+    react: "🍂",
+    filename: __filename
+},
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        const startTime = Date.now()
+        const message = await conn.sendMessage(from, { text: '*PINGING...*' })
+        const endTime = Date.now()
+        const ping = endTime - startTime
+        await conn.sendMessage(from, { text: `*🔥 CASEYRHODES-XMD SPEED : ${ping}ms*` }, { quoted: message })
+    } catch (e) {
+        console.log(e)
+        reply(`${e}`)
+    }
+})
