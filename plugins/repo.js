@@ -8,35 +8,35 @@ cmd({
     pattern: "repo",
     alias: ["sc", "script", "repository"],
     desc: "Show the bot's GitHub repository",
-    react: "📂",
+    react: "🥘",
     category: "info",
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/Pkphotographer1911/PK-XMD';
+    const githubRepoURL = 'https://github.com/ZEZETECH47/FAITH-MD';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
 
-        const response = await axios.get(`https://api.github.com/repos/pkphotographer1911/PK-XMD`);
+        const response = await axios.get(`https://api.github.com/repos/ZEZETECH47/FAITH-MD`);
         const repoData = response.data;
 
         const formattedInfo = `
-╭─〔 *PK-XMD REPOSITORY* 〕
+╭─〔 *FAITH-MD REPOSITORY* 〕
 │
 ├─ *📌 Repo Name:* ${repoData.name}
 ├─ *👤 Owner:* ${repoData.owner.login}
 ├─ *⭐ Stars:* ${repoData.stargazers_count}
 ├─ *⑂ Forks:* ${repoData.forks_count}
-├─ *📄 Description:* ${repoData.description || 'Powerful WhatsApp Multi-Device Bot by Pkdriller'}
+├─ *📄 Description:* ${repoData.description || 'Powerful WhatsApp Multi-Device Bot by ZEZETECH'}
 │
 ├─ *🔗 GitHub Link:*
 │   ${repoData.html_url}
 │
 ├─ *🌍 Channel:*
-│   https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x
-│
-╰─ *🚀 Powered by Pkdriller*
+│   https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r
+│.  https://whatsapp.com/channel/0029VbANIT5D8SDpK7oExi1v
+╰─ *🚀 Powered by ZEZETECH*
 `.trim();
 
         await conn.sendMessage(from, {
@@ -60,8 +60,8 @@ async (conn, mek, m, { from, reply }) => {
             },
             message: {
                 contactMessage: {
-                    displayName: "PK-XMD VERIFIED",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:PK-XMD;BOT;;;\nFN:PK-XMD\nitem1.TEL;waid=254700000000:+254 700 000000\nitem1.X-ABLabel:Bot\nEND:VCARD`
+                    displayName: "FAITH-MD VERIFIED",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN: FAITH-MD;BOT;;;\nFN:PK-XMD\nitem1.TEL;waid=255747397675:+255 74739 7675\nitem1.X-ABLabel:Bot\nEND:VCARD`
                 }
             }
         } });
