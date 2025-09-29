@@ -1,4 +1,8 @@
 
+<img alt="faith logo"  src="https://i.imgur.com/VwloR6v.jpeg">
+  </a>
+</p>
+
 ### 🟣 DEPLOYMENT PLAN
 
 ---
