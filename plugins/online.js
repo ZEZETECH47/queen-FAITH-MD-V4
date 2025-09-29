@@ -81,7 +81,7 @@ async (conn, mek, m, {
             message: {
                 contactMessage: {
                     displayName: 'ACTIVITY TRACKER ✅',
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:PK-XMD BOT\nORG:PK-XMD;\nTEL;type=CELL;type=VOICE;waid=254700000000:+254 700 000000\nEND:VCARD`,
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:MR REY BOT\nORG:MR REY-MD;\nTEL;type=CELL;type=VOICE;waid=255747397675:+255747397675\nEND:VCARD`,
                     jpegThumbnail: null
                 }
             }
@@ -95,7 +95,7 @@ async (conn, mek, m, {
                     title: "GROUP ACTIVITY",
                     body: `Detected ${activeMembers.length} active members`,
                     thumbnailUrl: "https://files.catbox.moe/fgiecg.jpg",
-                    sourceUrl: "https://github.com/pkdriller",
+                    sourceUrl: "https://github.com/ZEZETECH",
                     mediaType: 1,
                     renderLargerThumbnail: false,
                     showAdAttribution: true
@@ -103,8 +103,8 @@ async (conn, mek, m, {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "PK-XMD Bot Updates",
+                    newsletterJid: "120363295141350550@newsletter",
+                    newsletterName: "FAITH-MD Bot Updates",
                     serverMessageId: Math.floor(Math.random() * 1000000).toString(),
                 }
             }
