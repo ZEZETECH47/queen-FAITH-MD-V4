@@ -1,8 +1,8 @@
 {
-  "name": "PK-XMD",
-  "description": "Javascript WhatsApp bot made by Pkdriller",
+  "name": "FAITH-MD",
+  "description": "Javascript WhatsApp bot made by zezetech",
   "logo": "https://files.catbox.moe/fgiecg.jpg",
-  "keywords": ["PK-XMD"],
+  "keywords": ["FAITH-MD"],
   "success_url": "/",
   "stack": "container",
   "env": {
@@ -14,7 +14,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "PK-XMD"
+      "value": "FAITH-MD"
     },
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
@@ -64,22 +64,22 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY PK-XMD 💜🤎🖤🤍*"
+      "value": "*SEEN YOUR STATUS BY FAITH-MD💜🤎🖤🤍*"
     },
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "pkdriller"
+      "value": "zezetech"
     },
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "254794146821"
+      "value": "255747397675"
     },
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "PK-XMD"
+      "value": "FAITH-MD"
     },
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
@@ -104,12 +104,12 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://files.catbox.moe/fgiecg.jpg"
+      "value": ""
     },
     "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Pkdriller*"
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ zezetech*"
     },
     "DELETE_LINKS": {
       "description": "remove links from group automatically without removing member",
