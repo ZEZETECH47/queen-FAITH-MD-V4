@@ -45,7 +45,7 @@ cmd({
       externalAdReply: {
         title: "FAITH-MD",
         body: "Uptime Monitor by FAITH-MD",
-        thumbnailUrl: "https://files.catbox.moe/51dcx2.jpg",
+        thumbnailUrl: ""https://i.imgur.com/VwloR6v.jpeg"",
         mediaType: 1,
         renderLargerThumbnail: true,
         showAdAttribution: true,
