@@ -1,4 +1,6 @@
 
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=ff0000&center=true&width=1000&height=200&lines=FAITH47-MD" alt="Typing SVG" /></a>
 <img alt="faith logo"  src="https://i.imgur.com/VwloR6v.jpeg">
   </a>
 </p>
@@ -39,14 +41,11 @@
 
 
 
-[![Typing 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=ff0000&center=true&width=1000&height=200&lines=FAITH47-MD" alt="Typing SVG" /></a>
+
 
 ## 👇£CREATE ACCOUNT ON HEROKU© 
 [![Create Account on Heroku](https://img.shields.io/badge/GET%20CREATE.HEROKU-magenta?style=for-the-badge&logo=opencv&logoColor=white)](https://heroku.com)  
 
-
-=======Supported Versions Node Versions to run this bot====
 
 [Please Use Node Version Higher to Get The Best Performance.]
 
