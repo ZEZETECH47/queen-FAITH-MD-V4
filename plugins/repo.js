@@ -31,7 +31,7 @@ async (conn, mek, m, { from, reply }) => {
 ├─ *📄 Description:* ${repoData.description || 'Powerful WhatsApp Multi-Device Bot by ZEZETECH'}
 │
 ├─ *🔗 GitHub Link:*
-│   ${repoData.html_url}
+│   ${repoData.html_url}https://chat.whatsapp.com/IIeq9B11nQoIa3gduDKljz?mode=ems_copy_t
 │
 ├─ *🌍 Channel:*
 │   https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r
