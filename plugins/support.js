@@ -33,7 +33,7 @@ cmd({
       title: "📞 FAITH-MD • Support & Channel",
       body: `🕒 ${jtime} | 📅 ${jdate}`,
       thumbnailUrl: 'https://files.catbox.moe/12phie.jpg',
-      sourceUrl: '',
+      sourceUrl: 'https://chat.whatsapp.com/IIeq9B11nQoIa3gduDKljz?mode=ems_copy_t',
       mediaType: 1,
       renderLargerThumbnail: true,
       showAdAttribution: true
