@@ -86,7 +86,7 @@
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "Pkdriller"
+      "value": "mr Rey"
 }, 
 
     "OWNER_NUMBER": {
@@ -132,8 +132,7 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "
-<img alt="faith logo"https://i.imgur.com/VwloR6v.jpeg"
+      "value": "https://i.imgur.com/VwloR6v.jpeg"
     },
     
      "DESCRIPTION": {
