@@ -24,7 +24,7 @@ CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️�
 DELETE_LINKS: process.env.DELETE_LINKS || "true",
 OWNER_NUMBER: process.env.OWNER_NUMBER || "255757397675",
 OWNER_NAME: process.env.OWNER_NAME || "faith-md",
-DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ zezetech*",
+DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Mr REY-AI*",
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/12phie.jpg",
 LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *FAITH-MD*⚡",
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
